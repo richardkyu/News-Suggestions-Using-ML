@@ -6,15 +6,25 @@ Sample Article from FT: https://www.ft.com/content/b4c126b0-c007-11e9-89e2-41e55
 ### Topics generated:
 
 Topic 1: ['us', 'come', 'predictor', 'historic', 'shifts', 'happen', 'may', 'yield', 'curve', 'bond'] 
+
 Topic 2: ['risk', 'companies', 'finally', 'bank', 'markets', 'indices', 'fall', 'increased', 'currency', 'credit'] 
+
 Topic 3: ['shocked', 'question', 'election', 'last', 'old', 'take', 'left', 'swing', 'week', 'drop'] 
+
 Topic 4: ['new', 'recent', 'economy', 'us', 'market', 'big', 'global', 'none', 'china', 'economic'] 
+
 Topic 5: ['greenberg', 'conducted', 'white', 'starting', 'states', 'showed', 'irritated', 'york', 'momentum', 'report'] 
+
 Topic 6: ['trump', 'china', 'none', 'downturn', 'consumers', 'president', 'expect', 'likely', 'deal', 'decision'] 
+
 Topic 7: ['wealth', 'might', 'put', 'italy', 'economic', 'note', 'politics', 'global', 'general', 'believe'] 
+
 Topic 8: ['sector', 'slowdown', 'manufacturing', 'corporate', 'economic', 'low', 'hasn', 'decade', 'challenges', 'facing'] 
+
 Topic 9: ['next', 'step', 'market', 'prices', 'years', 'deepening', 'rally', 'yields', 'asking', 'comes'] 
+
 Topic 10: ['reality', 'long', 'central', 'economic', 'capital', 'political', 'trillions', 'favoured', 'labour', 'seemingly'] 
+
 
 ### News Suggestions generated:
 
