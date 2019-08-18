@@ -29,6 +29,16 @@ Topic 10: ['reality', 'long', 'central', 'economic', 'capital', 'political', 'tr
 ### News Suggestions generated:
 
 us come predictor historic shifts happen may yield curve bond
+1. A bet by investors that the future will be worse than the present. https://www.nytimes.com/2019/08/15/upshot/inverted-yield-curve-bonds-football-analogy.html
+2. Check out those low, low yields. https://www.nytimes.com/2019/08/13/opinion/the-bond-market-is-screaming.html
+3. Anticipation of interest-rate cuts sent stocks to new highs, but weak economic growth is raising fears that it’s too late to stave off a recession. https://www.nytimes.com/2019/07/12/business/fight-the-fed-markets-economy.html
+4. https://www.nytimes.com/reuters/2019/08/05/business/05reuters-global-markets-themes-graphic.html
+5. https://www.nytimes.com/reuters/2019/08/05/business/05reuters-global-markets-themes.html
+6. The central bank has embraced an easy monetary policy, but it has left the markets wondering if the economy is in trouble. https://www.nytimes.com/2019/04/12/business/wall-street-lose-faith-in-fed.html
+7. A rejection of what had been a consensus view of the relationship between the jobless rate and inflation. https://www.nytimes.com/2019/07/11/upshot/fed-reversal-economy-workers-powell.html
+8. Here’s what you need to know at the end of the day. https://www.nytimes.com/2019/03/22/briefing/mueller-report-north-korea-sanctions-ncaa.html
+9. Legal challenges still stand in the way of the White House, despite Robert Mueller’s good news for President Trump. https://www.nytimes.com/2019/03/25/business/dealbook/mueller-trump-russia.html
+10. https://www.nytimes.com/interactive/2019/04/22/upshot/upshot-at-five-years.html
 
 risk companies finally bank markets indices fall increased currency credit
 1. The bond market reveals a growing crack in the financial system, but regulators are not doing enough to make sure that banks are prepared. https://www.nytimes.com/2019/01/10/opinion/shutdown-economy-recession.html 
