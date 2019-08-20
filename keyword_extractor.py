@@ -4,7 +4,6 @@ import random, math, time
 from scipy.special import psi
 from preprocessing import preprocessing, maxItemNum
 from retrieve_articles import retrieve_articles
-from news_api import retrieve_articles_newsapi
 
 docs, word2id, id2word = preprocessing()
     
