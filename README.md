@@ -1,133 +1,154 @@
 # News-Suggestions-Using-ML
 An implementation of LDA in Python to extract lists of topics relevant to article text input by a user. API calls utilizing extracted topics populate news suggestions.
 
-Sample Article from FT: https://www.ft.com/content/b4c126b0-c007-11e9-89e2-41e555e96722
+Here, the algorithm identifies ten topic categories related to a gun violence article and suggests ten additional articles from the NYTimes through an API call related to each topic category.
+
+Sample article used from NYTimes: https://www.nytimes.com/2019/08/19/us/politics/trump-gun-laws.html
 
 ### Topics generated:
 
-Topic 1: ['us', 'come', 'predictor', 'historic', 'shifts', 'happen', 'may', 'yield', 'curve', 'bond'] 
+Topic 1: ['trump', 'mass', 'legislation', 'aggressive', 'house', 'response', 'week', 'white', 'shootings', 'back'] 
 
-Topic 2: ['risk', 'companies', 'finally', 'bank', 'markets', 'indices', 'fall', 'increased', 'currency', 'credit'] 
+Topic 2: ['gun', 'trump', 'advocates', 'washington', 'shootings', 'rights', 'checks', 'mass', 'background', 'new']
 
-Topic 3: ['shocked', 'question', 'election', 'last', 'old', 'take', 'left', 'swing', 'week', 'drop'] 
+Topic 3: ['background', 'support', 'trump', 'checks', 'gun', 'shooting', 'bill', 'universal', 'young', 'guns'] 
 
-Topic 4: ['new', 'recent', 'economy', 'us', 'market', 'big', 'global', 'none', 'china', 'economic'] 
+Topic 4: ['schumer', 'said', 'universal', 'pelosi', 'background', 'trump', 'ms', 'aides', 'check', 'comments'] 
 
-Topic 5: ['greenberg', 'conducted', 'white', 'starting', 'states', 'showed', 'irritated', 'york', 'momentum', 'report'] 
+Topic 5: ['said', 'trump', 'people', 'mental', 'health', 'problem', 'forget', 'politics', 'want', 'reshaping'] 
 
-Topic 6: ['trump', 'china', 'none', 'downturn', 'consumers', 'president', 'expect', 'likely', 'deal', 'decision'] 
+Topic 6: ['president', 'checks', 'something', 'republicans', 'bipartisan', 'democratic', 'hill', 'capitol', 'hard', 'pressure'] 
 
-Topic 7: ['wealth', 'might', 'put', 'italy', 'economic', 'note', 'politics', 'global', 'general', 'believe'] 
+Topic 7: ['officials', 'trump', 'organization', 'president', 'gun', 'rights', 'statement', 'group', 'muscle', 'internal'] 
 
-Topic 8: ['sector', 'slowdown', 'manufacturing', 'corporate', 'economic', 'low', 'hasn', 'decade', 'challenges', 'facing'] 
+Topic 8: ['trump', 'senator', 'republicans', 'laws', 'democrat', 'legislative', 'many', 'house', 'president', 'lawmakers'] 
 
-Topic 9: ['next', 'step', 'market', 'prices', 'years', 'deepening', 'rally', 'yields', 'asking', 'comes'] 
+Topic 9: ['gun', 'safety', 'noted', 'country', 'many', 'feinblatt', 'looking', 'group', 'back', 'white'] 
 
-Topic 10: ['reality', 'long', 'central', 'economic', 'capital', 'political', 'trillions', 'favoured', 'labour', 'seemingly'] 
+Topic 10: ['trump', 'gun', 'shooting', 'bedminster', 'pushing', 'senator', 'advocates', 'republican', 'laws', 'tougher'] 
 
 
 ### News Suggestions generated:
 
-us come predictor historic shifts happen may yield curve bond
-1. A bet by investors that the future will be worse than the present. https://www.nytimes.com/2019/08/15/upshot/inverted-yield-curve-bonds-football-analogy.html
-2. Check out those low, low yields. https://www.nytimes.com/2019/08/13/opinion/the-bond-market-is-screaming.html
-3. Anticipation of interest-rate cuts sent stocks to new highs, but weak economic growth is raising fears that it’s too late to stave off a recession. https://www.nytimes.com/2019/07/12/business/fight-the-fed-markets-economy.html
-4. https://www.nytimes.com/reuters/2019/08/05/business/05reuters-global-markets-themes-graphic.html
-5. https://www.nytimes.com/reuters/2019/08/05/business/05reuters-global-markets-themes.html
-6. The central bank has embraced an easy monetary policy, but it has left the markets wondering if the economy is in trouble. https://www.nytimes.com/2019/04/12/business/wall-street-lose-faith-in-fed.html
-7. A rejection of what had been a consensus view of the relationship between the jobless rate and inflation. https://www.nytimes.com/2019/07/11/upshot/fed-reversal-economy-workers-powell.html
-8. Here’s what you need to know at the end of the day. https://www.nytimes.com/2019/03/22/briefing/mueller-report-north-korea-sanctions-ncaa.html
-9. Legal challenges still stand in the way of the White House, despite Robert Mueller’s good news for President Trump. https://www.nytimes.com/2019/03/25/business/dealbook/mueller-trump-russia.html
-10. https://www.nytimes.com/interactive/2019/04/22/upshot/upshot-at-five-years.html
+**trump mass legislation aggressive house response week white shootings back**
+1. After President Trump attacked four congresswomen of color on Twitter, suggesting they "go back" to the places they came from, readers shared experiences of being told the same thing.  https://www.nytimes.com/2019/07/19/reader-center/trump-go-back-stories.html 
+2. A cluster of recent mass shootings that killed 36 people in California, Texas and Ohio has sparked renewed calls for the U.S. Congress to pass legislation to prevent gun violence. https://www.nytimes.com/reuters/2019/08/08/us/politics/08reuters-usa-shooting-legislation-factbox.html 
+3. A cluster of recent mass shootings that killed 36 people in California, Texas and Ohio has sparked renewed calls for the U.S. Congress to pass legislation to prevent gun violence. https://www.nytimes.com/reuters/2019/08/07/us/07reuters-usa-shooting-legislation-factbox.html 
+4. Democrats pressed Senate Majority Leader Mitch McConnell on Tuesday to approve House-passed legislation expanding background checks and to take other steps curbing guns, in an offensive fueled by public outrage over this month's mass killings in T... https://www.nytimes.com/aponline/2019/08/13/us/politics/ap-us-mass-shootings-democrats.html 
+5. Democratic presidential candidates have demanded action on proposals to curtail gun violence in the aftermath of two mass shootings that killed 31 people in Texas and Ohio over the weekend. https://www.nytimes.com/reuters/2019/08/07/us/politics/06reuters-usa-election-guns-factbox.html 
+6. A cluster of recent mass shootings that killed 36 people in California, Texas and Ohio has sparked renewed calls for the U.S. Congress to pass legislation to prevent gun violence. https://www.nytimes.com/reuters/2019/08/06/us/06reuters-usa-shooting-legislation-factbox.html 
+7. Senate Majority Leader Mitch McConnell is resisting pressure to bring senators back from recess to address gun violence, despite wrenching calls to "do something" in the aftermath of back-to-back mass shootings. https://www.nytimes.com/aponline/2019/08/07/us/politics/ap-us-mass-shootings-republicans.html 
+8. Some criticism of the president’s stance on gun control and his relationship to the rise of white nationalism came from conservative outlets. https://www.nytimes.com/2019/08/05/business/media/trump-shooting-media-coverage.html 
+9. House Speaker Nancy Pelosi said Friday that the country's elected officials have a responsibility to "ensure domestic tranquility" and called on the Senate to return to work to vote on the House's bill bolstering background checks for gun purchase... https://www.nytimes.com/aponline/2019/08/16/us/politics/ap-us-congress-guns.html 
+10. Whether the president’s support is real or another momentary reversal will determine if Congress passes the first new federal gun control measures in years. https://www.nytimes.com/2019/08/09/us/politics/gun-background-checks.html 
 
-risk companies finally bank markets indices fall increased currency credit
-1. The bond market reveals a growing crack in the financial system, but regulators are not doing enough to make sure that banks are prepared. https://www.nytimes.com/2019/01/10/opinion/shutdown-economy-recession.html 
-2. Artificial intelligence is ideally suited to crunching the probabilities of all types of risk and then providing us with prompts to make sensible judgments. https://www.nytimes.com/paidpost/capgemini/how-ai-will-make-us-better-risk-takers.html 
-3. The escalating trade war between the United States and China is threatening the global economy. https://www.nytimes.com/2019/05/15/business/us-china-trade-war-economy.html 
-4. White House advisers discount warnings of a possible recession. But the president may be gambling that the Federal Reserve can ward off that prospect. https://www.nytimes.com/2019/08/15/business/economy/trump-economy.html 
-5. The steady flow of money that China once poured into the U.S. has shrunk since President Trump took office. https://www.nytimes.com/2019/07/22/business/dealbook/china-us-investment.html 
-6. President Trump’s trade war is stirring uncertainty, weighing on manufacturing and disrupting increasingly delicate global economic growth. https://www.nytimes.com/2019/06/18/business/economy/global-economy-trade-war.html 
-7. Investors are wising up to the bubble in risky corporate bonds. But it may be too late for companies that took on more debt than they can handle. https://www.nytimes.com/2019/01/17/opinion/shutdown-recession.html 
-8. Here’s what you need to know. https://www.nytimes.com/2019/07/08/briefing/turkey-boris-johnson-jeffrey-epstein.html 
-9. Chinese officials said growth in the second quarter was just 6.2 percent, showing the limits of Beijing’s ability to juice its economy. https://www.nytimes.com/2019/07/15/business/dealbook/china-economy.html 
-10. Here’s what you need to know. https://www.nytimes.com/2019/08/08/briefing/scotland-irish-housing-crisis-spanish-steps.html 
+**gun trump advocates washington shootings rights checks mass background new**
+1. In the aftermath of the back-to-back shooting massacres in Texas and Ohio , the debate over gun control has returned to the National Rifle Association and its immense power to stymie any significant legislation on the issue. https://www.nytimes.com/aponline/2019/08/09/us/ap-us-nra-wayne-lapierre-abridged.html 
+2. In the aftermath of the back-to-back shooting massacres in Texas and Ohio, the debate over gun control has returned to the National Rifle Association and its immense power to stymie any significant legislation on the issue. https://www.nytimes.com/aponline/2019/08/08/us/ap-us-nra-wayne-lapierre.html 
+3. The F.B.I. also said it had opened a domestic terrorism investigation into the shooting at a Gilroy, Calif., garlic festival. https://www.nytimes.com/2019/08/06/us/mass-shootings.html 
+4. His presidency hasn’t been the boon for gun-rights supporters that they might have hoped. https://www.nytimes.com/2019/02/11/opinion/trump-nra-parkland.html 
+5. “Our officers need help, they need help with gun control,” Philadelphia’s mayor said after six police officers were wounded by gunfire. But in most states, the issue is not up to urban leaders. https://www.nytimes.com/2019/08/15/us/philadelphia-shooting-gun-control.html 
+6. If the president did not originally inspire the gunman, he has brought into the mainstream polarizing ideas and people once consigned to the fringes of American society. https://www.nytimes.com/2019/08/04/us/politics/trump-mass-shootings.html 
+7. Around the nation, local sheriffs and others have pushed back against new gun restrictions. “This is just a gun-grab measure,” said one New Mexico sheriff. https://www.nytimes.com/2019/03/11/us/state-gun-laws.html 
+8. In the On Politics newsletter: What do the president’s recent trips to Japan, Britain and a Virginia church have in common? Flattery. https://www.nytimes.com/2019/06/03/us/politics/on-politics-with-lisa-lerer-trumps-day-of-prayer.html 
+9. After Congress failed to pass legislation in the wake of the 2012 shooting, activists turned their energy toward building infrastructure for future fights. https://www.nytimes.com/2019/04/29/us/politics/newtown-parkland-guns.html 
+10. The Parkland students became a force for gun control legislation and boosted the youth vote. Here’s how they changed America’s response to mass shootings. https://www.nytimes.com/2019/02/13/us/parkland-shooting.html 
 
-shocked question election last old take left swing week drop
-1. Groups like the Sunrise Movement helped pressure Democratic presidential candidates to support the Green New Deal. They are now deciding how to use their rising influence. https://www.nytimes.com/2019/08/04/us/politics/democratic-candidates-climate-change.html 
-2. The fissures displayed at the Democratic debates in Detroit left senior Trump campaign officials predicting a bump in their poll numbers in critical Rust Belt states. https://www.nytimes.com/2019/08/01/us/politics/debates-republican-reaction.html 
-3. Three artists and a pair of curators came together at The New York Times to attempt to make a list of the era’s essential artworks. Here’s their conversation. https://www.nytimes.com/2019/07/15/t-magazine/most-important-contemporary-art.html 
-4. With at least four candidates in strong contention for the nomination, the race is anyone’s to win. https://www.nytimes.com/2019/08/01/us/full-democratic-debate-highlights.html 
-5. The C.F.P.B. was created to protect Americans from predatory lenders after the financial crisis. President Trump’s new chief of staff took it apart on his way to White House. https://www.nytimes.com/2019/04/16/magazine/consumer-financial-protection-bureau-trump.html 
-6. Germany’s big political parties are imploding, but no one knows what will come next. https://www.nytimes.com/2019/05/31/opinion/angela-merkel-germany.html 
-7. In 2015, we began following six people over age 85. Last year the four remaining showed that old age is not what you think. https://www.nytimes.com/2019/01/04/nyregion/these-4-new-yorkers-are-experts-in-living-what-do-they-know-that-we-dont.html 
-8. After an achingly narrow defeat in the Democratic primary for Queens D.A., Ms. Cabán is not ruling out another run for office. https://www.nytimes.com/2019/08/13/nyregion/tiffany-caban-future-queens-da.html 
-9. In the On Politics newsletter: The president’s attacks on four congresswomen, and the response by his base, gave a sense of his re-election campaign. https://www.nytimes.com/2019/07/18/us/politics/on-politics-send-her-back.html 
-10. Chicago is hardly alligator country, which makes the spotting of a four-feet-long creature in a city park all the more fascinating to residents. “Chance the Snapper,” they named him. https://www.nytimes.com/2019/07/11/us/chicago-alligator-search.html 
+**background support trump checks gun shooting bill universal young guns**
+1. The F.B.I. also said it had opened a domestic terrorism investigation into the shooting at a Gilroy, Calif., garlic festival. https://www.nytimes.com/2019/08/06/us/mass-shootings.html 
+2. New York Times reporters followed the exchanges and provided context around the candidates’ claims. https://www.nytimes.com/2019/07/30/us/politics/fact-check-democratic-debate.html 
+3. A former governor of Colorado and mayor of Denver, Mr. Hickenlooper is running for president on a more centrist platform than many of his competitors. https://www.nytimes.com/2019/03/04/us/politics/2020-john-hickenlooper-on-the-issues.html 
+4. The California senator has not always offered accurate defenses of her record or assessments of President Trump’s policies. https://www.nytimes.com/2019/06/08/us/politics/fact-check-kamala-harris.html 
+5. While fighting for stricter gun laws, I was always told I didn’t understand. Maybe now I do. https://www.nytimes.com/2019/06/01/opinion/sunday/shooting-laws-guns.html 
+6. One year later, what have we learned from the shooting at Marjory Stoneman Douglas High School? https://www.nytimes.com/2019/02/14/learning/learning-with-parkland-a-year-after-the-school-shooting-that-was-supposed-to-change-everything.html 
+7. Mr. Ryan, an Ohio congressman, has outlined a campaign focused on appealing to the working-class Midwestern voters who flipped to President Trump in 2016. https://www.nytimes.com/2019/04/04/us/politics/tim-ryan-2020-issues.html 
+8. Two students were in custody after the shooting at STEM School Highlands Ranch, near Denver. https://www.nytimes.com/2019/05/07/us/colorado-school-shooting.html 
+9. As the gun rights group lavished pay and perks on its leaders and partners, fueling infighting, it increasingly relied on its own charity for funds. Tax experts have questions. https://www.nytimes.com/2019/05/14/us/nra-finances-executives-board-members.html 
+10. Shifting the gun violence debate, Senate Majority Leader Mitch McConnell says he now wants to consider background checks and other bills, setting up a potentially pivotal moment when lawmakers return in the fall. https://www.nytimes.com/aponline/2019/08/08/us/politics/ap-us-mass-shootings-congress.html 
 
-new recent economy us market big global none china economic
-1. Harry Markopolos raised the first alarms over Bernie Madoff’s Ponzi scheme. Now he says there’s a big problem at G.E. https://www.nytimes.com/2019/08/16/business/dealbook/ge-fraud.html 
-2. Suspending a ban on U.S. sales to the technology giant could be good news for the Chinese company, but it underlines flaws in Washington’s strategy. https://www.nytimes.com/2019/07/01/business/dealbook/huawei-trade-5g.html 
-3. More than 300 people plan to testify in Washington about the impact on companies, workers and the American consumer. https://www.nytimes.com/2019/06/17/business/trump-tariff-consumer-goods.html 
-4. In the barely inhabited steppes of Central Asia, it is establishing the next foothold in its trillion-dollar campaign to transform global infrastructure. https://www.nytimes.com/interactive/2019/01/29/magazine/china-globalization-kazakhstan.html 
-5. The president, who has been eager to cut a deal with Beijing, said the negotiators had forged a compromise on key issues but few details have been released. https://www.nytimes.com/2019/02/24/us/politics/us-china-trade-truce.html 
-6. Thirty years later, few issues have defined Donald J. Trump’s presidency more than his love for tariffs — and on few issues has he been more unswerving. https://www.nytimes.com/2019/05/15/us/politics/china-trade-donald-trump.html 
-7. Romance scams on Facebook. https://www.nytimes.com/2019/07/29/briefing/hong-kong-facebook-federal-reserve.html 
-8. The company could help fix a system that is clearly broken, to solve a crisis whose costs are measured in lives, our columnist writes. https://www.nytimes.com/2019/08/06/business/dealbook/walmart-guns.html 
-9. Big tech companies create jobs, encourage innovation and provide valuable services free. Why would we want to break them up? https://www.nytimes.com/2019/05/23/opinion/privacy-tech-companies.html 
-10. The economy added 304,000 jobs in January, the 100th consecutive month of payroll gains. Unemployment ticked up to 4 percent, possibly a shutdown-related anomaly. https://www.nytimes.com/2019/02/01/business/economy/jobs-report.html 
+**schumer said universal pelosi background trump ms aides check comments**
+1. The Democrats said that reports about Cindy Yang raised “serious counterintelligence concerns” about access to Mr. Trump’s Florida estate, as well as about campaign finance violations. https://www.nytimes.com/2019/03/18/us/politics/cindy-yang-trump.html 
+2. You can credit social movements for that. https://www.nytimes.com/2019/08/08/opinion/the-squad-democrats.html 
+3. In his State of the Union address, the president toggled between conciliation and confrontation, and demanded a wall on the nation’s southwestern border. https://www.nytimes.com/2019/02/05/us/politics/trump-state-of-the-union.html 
+4. Some advisers worry that the president is giving oxygen to a fire that otherwise might burn out or at least be left to crackle in the background. https://www.nytimes.com/2019/05/24/us/politics/trump-impeachment-fight.html 
+5. The shutdown has not only widened the divide between the Senate majority leader and the House speaker, but also imperiled prospects for passing major legislation when the impasse ends. https://www.nytimes.com/2019/01/20/us/politics/mcconnell-pelosi-government-shutdown.html 
+6. The state’s elections in November will test the potency of gun rights as a voting issue. Democrats are looking to take power and enact gun control legislation next year. https://www.nytimes.com/2019/08/08/us/politics/virginia-gun-control-mass-shootings.html 
+7. During the contentious meeting, the president made his case for a border wall and rejected Democrats’ proposals for reopening the government while the two sides ironed out their differences. https://www.nytimes.com/2019/01/02/us/politics/trump-congress-shutdown.html 
+8. President Trump sought to go over the heads of Congress to enlist support for his border wall, raising the stakes of a conflict that has closed many federal agencies. https://www.nytimes.com/2019/01/08/us/politics/donald-trump-speech.html 
+9. President Trump cast the proposal, which included $5.7 billion for a border barrier, as a compromise as he sought to shift pressure to Democrats to end the government shutdown. https://www.nytimes.com/2019/01/19/us/politics/trump-proposal-daca-wall.html 
+10. How do you think our country is doing right now? Are we better off than we were a year ago? Why or why not? https://www.nytimes.com/2019/02/05/learning/how-would-you-describe-the-state-of-our-union.html 
 
-greenberg conducted white starting states showed irritated york momentum report
-1. Candidates condemn President Trump’s “go back” comment, a Harris-Biden rematch, and a new California poll. https://www.nytimes.com/2019/07/20/us/politics/2020-presidential-race.html 
-2. Newly unearthed documents reveal how an environmental-minded socialite became an ardent nativist whose money helped sow the seeds of the Trump anti-immigration agenda. https://www.nytimes.com/2019/08/14/us/anti-immigration-cordelia-scaife-may.html 
-3. The Mueller team ultimately decided not to charge the president, citing numerous legal and factual constraints, but pointedly declined to exonerate him. https://www.nytimes.com/2019/04/18/us/politics/mueller-report-russian-interference-donald-trump.html 
-4. Lawmakers say President Trump’s disregard for their authority leaves them no choice but to use the courts with greater frequency, but that could have constitutional consequences. https://www.nytimes.com/2019/08/13/us/politics/trump-house-lawsuits.html 
-5. A New York Times analysis identified more than 350 white extremist attacks in Europe, North America and Australia since 2011. Perpetrators of the deadliest attacks engaged with extremist content online. https://www.nytimes.com/interactive/2019/04/03/world/white-extremist-terrorism-christchurch.html 
-6. Or is that question beside the point in the Trump era? https://www.nytimes.com/2019/04/10/opinion/democratic-candidates-primaries.html 
-7. The largest Democratic field in the modern U.S. political era is competing for the party's 2020 presidential nomination, although another Democrat dropped out of the race on Thursday. https://www.nytimes.com/reuters/2019/08/15/us/politics/15reuters-usa-election-2020-candidates-factbox.html 
-8. In an era of deep polarization, Mr. Mueller’s 448-page report quickly became yet another case study in the disparate realities of American politics. https://www.nytimes.com/2019/04/19/us/politics/mueller-report-democrats-republicans.html 
-9. Judge James Troiano’s comments sparked a nationwide outcry; now he's receiving threats and being called upon to resign. https://www.nytimes.com/2019/07/08/nyregion/judge-james-troiano.html 
-10. The advent of Beto O’Rourke’s presidential candidacy has Democrats arguing ferociously among themselves. https://www.nytimes.com/2019/03/20/opinion/beto-presidential-campaign.html 
+**said trump people mental health problem forget politics want reshaping**
+1. In the On Politics newsletter: The president’s attacks on four congresswomen, and the response by his base, gave a sense of his re-election campaign. https://www.nytimes.com/2019/07/18/us/politics/on-politics-send-her-back.html 
+2. His studies of the use of drugs to treat disorders led many to consider him “the father of psychopharmacology.” https://www.nytimes.com/2019/08/16/science/donald-klein-dead.html 
+3. U.S. President Donald Trump suggested on Friday he could persuade the powerful National Rifle Association lobby group to drop its strong opposition to gun restrictions after recent mass shootings that have reignited the gun control debate. https://www.nytimes.com/reuters/2019/08/09/us/09reuters-usa-shooting.html 
+4. Who’s less popular than Elton John? https://www.nytimes.com/2019/08/14/opinion/trump.html 
+5. A rash of suicides by police officers has shaken the New York Police Department, leading the commissioner to declare a mental health emergency and highlighting the problem of untreated depression among law enforcement officers nationwide. https://www.nytimes.com/aponline/2019/08/15/us/ap-us-police-suicides.html 
+6. The president took sharp aim at opponents even as he visited two cities in mourning after horrific mass shootings in Ohio and Texas. https://www.nytimes.com/2019/08/07/us/politics/trump-el-paso-dayton-visits.html 
+7. At the Democratic debates in a humid Motor City, it wasn’t just the candidates who were on display and clamoring for attention. https://www.nytimes.com/2019/07/31/us/politics/democratic-debates-detroit.html 
+8. Here’s what you need to know. https://www.nytimes.com/2019/07/01/briefing/north-korea-hong-kong-nba.html 
+9. The newest debate among the Democratic presidential candidates is whether accepting an invitation from Fox News is a Faustian bargain. https://www.nytimes.com/2019/05/16/us/politics/on-politics-fox-news.html 
+10. Stop talking so much about the America that he’s destroying. Save your breath for the America you want to create. https://www.nytimes.com/2019/07/20/opinion/sunday/trump-squad-democrats-2020.html 
 
-trump china none downturn consumers president expect likely deal decision
-1. Beijing first vowed to retaliate against new tariffs, even after Trump postponed some of them, but then appeared to soften its stance. https://www.nytimes.com/2019/08/15/business/stock-market-today.html 
-2. A protracted trade war between China and the United States, the world's largest economies, and a deteriorating global growth outlook has left investors apprehensive about the end to the longest expansion in American history. https://www.nytimes.com/reuters/2019/08/13/business/13reuters-usa-economy-watchlist-graphic.html 
-3. It has become a jarring and frequent contradiction. President Donald Trump blames the Federal Reserve for putting the U.S. economy at risk while data shows an economy in "reasonably good" shape, as the head of the central bank recently said. https://www.nytimes.com/reuters/2019/08/11/business/11reuters-usa-fed-trump.html 
-4. Global oil benchmark Brent futures fell more than 3% on Monday on global growth concerns after U.S. President Donald Trump last week threatened China with more tariffs, which could limit crude demand from the world's two biggest buyers.   https://www.nytimes.com/reuters/2019/08/05/business/05reuters-global-oil.html 
-5. More than 30 around the world have acted in the face of recession fears. Economists warn of a currency-tied competition. https://www.nytimes.com/2019/08/15/business/economy/central-bank-rate-cuts.html 
-6. Treasury Secretary Steven Mnuchin will meet China’s central bank governor in the first meeting of senior officials from the countries since trade talks broke down. https://www.nytimes.com/2019/06/07/business/economy/g20-trade-war-trump-tariffs.html 
-7. Larry Kudlow’s acknowledgment was merely a recognition of Economics 101. But it flew in the face of one of President Trump’s favorite arguments: that trade wars are easy to win. https://www.nytimes.com/2019/05/12/us/politics/larry-kudlow-trump-trade.html 
-8. Beijing’s leaders have increasingly focused on rekindling growth as the trade war drags on and negotiations prove difficult to control or predict. https://www.nytimes.com/2019/08/02/business/trump-tariffs-china-trade.html 
-9. Global investors grew calmer after Beijing’s retaliatory tariffs shook markets, but sharp rhetoric suggested the uncertainty was far from over. https://www.nytimes.com/2019/05/14/business/global-markets.html 
-10.  https://www.nytimes.com/aponline/2019/08/15/business/ap-us-business-highlights.html 
+**president checks something republicans bipartisan democratic hill capitol hard pressure**
+1. Whether the president’s support is real or another momentary reversal will determine if Congress passes the first new federal gun control measures in years. https://www.nytimes.com/2019/08/09/us/politics/gun-background-checks.html 
+2. Rather than present tough choices and coherent ideas, they are mostly responding to his outrages with empty rhetoric. https://www.nytimes.com/2019/08/15/opinion/on-immigration-the-democrats-are-playing-into-trumps-hands.html 
+3. With the clock ticking toward a potential debt default, federal budget negotiators are maneuvering to isolate the man seen as the common enemy: Mick Mulvaney. https://www.nytimes.com/2019/07/18/us/politics/budget-negotiators-mick-mulvaney.html 
+4. The trickle of Democrats backing an impeachment inquiry is threatening to turn into a flood, but there are few signs the rising tide will sway House Democratic leaders. https://www.nytimes.com/2019/08/01/us/politics/impeachment-house-democrats-trump.html 
+5. Nearly all of the 2020 Democratic candidates gave speeches at the annual event, and while many joked about the size of the field, most sought to contrast themselves with President Trump. https://www.nytimes.com/2019/08/09/us/politics/iowa-democrats-wing-ding-dinner.html 
+6. Those in favor of amending the National Emergencies Act of 1976 remain determined to pursue bipartisan changes in legislation they view as a surrender of congressional power. https://www.nytimes.com/2019/03/16/us/politics/trump-veto-emergency-act.html 
+7. Elaine Chao has boosted the profile of her family’s shipping company, which benefits from industrial policies in China that are roiling the Trump administration. https://www.nytimes.com/2019/06/02/us/politics/elaine-chao-china.html 
+8. Republicans defected by the dozens, despite President Trump’s endorsement and pressure from key outside groups, and Democrats were left to get the deal passed. https://www.nytimes.com/2019/07/25/us/politics/budget-spending-deal.html 
+9. On the surface, the annual Aipac conference looks relatively unchanged. But recent actions by President Trump and rising criticism of Israel on the left are taking a toll. https://www.nytimes.com/2019/03/23/us/politics/aipac-israel-trump-democrats.html 
+10. The House-Senate conference committee that has three weeks to strike a border security deal is dominated by lawmakers experienced in bipartisan compromise. https://www.nytimes.com/2019/01/28/us/politics/trump-congress-border-wall.html 
 
-wealth might put italy economic note politics global general believe
-1. Here’s what you need to know. https://www.nytimes.com/2019/08/01/briefing/china-trade-persian-gulf-wales-election.html 
-2. By granting Mr. Morrison his first full term, Australians signaled their reluctance to bet on a new leader at a time when the economy has not suffered a recession in nearly 28 years. https://www.nytimes.com/2019/05/18/world/australia/election-results-scott-morrison.html 
-3. It’s time to reckon with the internal contradictions of climate policy. https://www.nytimes.com/2019/02/15/opinion/green-new-deal-climate-change-pelosi.html 
-4. Power is where natural and human energy meet. For better or for worse. https://www.nytimes.com/2019/05/26/opinion/a-lesson-in-power-dystopian-world.html 
-5. The problem with holding out for a perfect Brexit plan is that you can’t fix stupid. https://www.nytimes.com/2019/04/02/opinion/brexit-news.html 
-6. Britain’s prime minister is confronting a ferocious backlash over her latest proposals for leaving the European Union, including the resignation of a key cabinet member. https://www.nytimes.com/2019/05/22/world/europe/brexit-theresa-may.html 
-7. At the Milken Institute’s annual global conference this week, business leaders shared a concern: a coming backlash against capitalism. https://www.nytimes.com/2019/05/02/business/dealbook/capitalism-socialism.html 
-8. Soak-the-rich plans that seemed politically far-fetched just months ago are getting a full-throttle response from voters. https://www.nytimes.com/2019/02/08/business/democratic-wealth-tax-warren-sanders-ocasio-cortez.html 
-9. Here’s what you need to know. https://www.nytimes.com/2019/07/09/briefing/jeffrey-epstein-turkey-coco-gauff.html 
-10. On his first visit to the Balkan nation, the pope also spoke of mending ties to the Bulgarian Orthodox Church, but he got a cool reception. https://www.nytimes.com/2019/05/05/world/europe/pope-francis-bulgaria.html 
+**officials trump organization president gun rights statement group muscle internal**
+1. The pattern is clear: Hate-filled manifestos posted on websites populated by white supremacists, followed by gun attacks against blacks, Jews, Muslims, or Latin American immigrants. https://www.nytimes.com/reuters/2019/08/09/us/09reuters-usa-shooting-internet.html 
+2. This is what happens when our nation’s leader normalizes hate. https://www.nytimes.com/2019/08/06/opinion/el-paso-shooting-latino.html 
+3. Fox News Channel host Tucker Carlson faced criticism Wednesday for declaring white supremacy "a hoax," the same day President Donald Trump visited El Paso, Texas, after a white gunman who had written an anti-Hispanic rant killed 22 people. https://www.nytimes.com/aponline/2019/08/07/us/ap-us-fox-news-carlson.html 
+4. In a private White House meeting this month, President Abdel Fattah el-Sisi of Egypt urged President Trump to deem his opposition terrorists, officials said. https://www.nytimes.com/2019/04/30/us/politics/trump-muslim-brotherhood.html 
+5. The State Department's internal watchdog has found significant evidence of leadership and management problems, including possible political retribution against career employees, in the bureau that deals with international organizations. https://www.nytimes.com/aponline/2019/08/15/us/politics/ap-us-united-states-state-department.html 
+6. Even in deep blue New York, there are limits to trolling President Trump. https://www.nytimes.com/2019/08/15/nyregion/barack-obama-avenue.html 
+7. With a push from President Donald Trump, Israel on Thursday barred two Muslim-American congresswomen from entering the country for a visit, an extraordinary step bringing the longtime U.S. ally into Trump's domestic fight against political rivals ... https://www.nytimes.com/aponline/2019/08/15/world/middleeast/ap-ml-israel-us-congress.html 
+8. Critics and allies said President Trump’s relative disinterest in human rights and focus on economics have kept him from taking sides between China and the protesters. https://www.nytimes.com/2019/08/13/us/politics/hong-kong-trump.html 
+9. New York Attorney General Letitia James’s investigation of the National Rifle Association now encompasses the group’s board. https://www.nytimes.com/2019/08/06/us/nra-board-subpoena-letitia-james.html 
+10. More than half a century after Lyndon Johnson fell short on his attempt at gun control, new battles bring fresh roadblocks and dispute. https://www.nytimes.com/2019/08/06/us/gun-background-checks.html 
 
-sector slowdown manufacturing corporate economic low hasn decade challenges facing
+**trump senator republicans laws democrat legislative many house president lawmakers**
+1. Robert Mueller sounded the alarm about threats to the nation’s democracy, but lawmakers keep playing politics. https://www.nytimes.com/2019/07/27/opinion/election-security-mueller-trump.html 
+2. The Legislature is poised to pass a bill that would allow three congressional committees to seek the release of President Trump’s state tax returns. https://www.nytimes.com/2019/05/21/nyregion/trump-tax-return-bills-new-york.html 
+3. After President Trump stopped short of a broad legislative response to the weekend’s massacres, lawmakers in both parties said Mr. McConnell held the key. https://www.nytimes.com/2019/08/05/us/politics/mitch-mcconnell-guns.html 
+4. Attorney General William P. Barr pulled out of a Thursday hearing of the House Judiciary Committee, and he has left House lawmakers who are investigating the president fuming and calculating. https://www.nytimes.com/2019/05/02/us/politics/house-democrats-barr-mueller.html 
+5. Congress has tools to override the president’s declaration, but opponents most likely do not have the votes to overcome a veto. https://www.nytimes.com/2019/02/14/us/politics/trump-congress-national-emergency.html 
+6. President Trump had promised Republicans would replace the Affordable Care Act with a better, cheaper health law. Then the Senate majority leader told him that would not be happening. https://www.nytimes.com/2019/04/02/us/politics/obamacare-donald-trump.html 
+7. As history has shown with the Watergate and Iran-contra scandals, such investigations can gain legitimacy only when members of the president’s own party support them. https://www.nytimes.com/2019/05/11/us/politics/trump-republicans-watergate.html 
+8. Reaching a deal over a disaster relief package was threatened by the White House’s push for money for immigration law enforcement and assistance at the southwestern border. https://www.nytimes.com/2019/05/07/us/politics/disaster-relief-border-security.html 
+9. Mr. McKean said he would join the Democratic Party and called President Trump’s behavior unacceptable. “If this is the new normal,” he said, “I want no part of it.” https://www.nytimes.com/2019/04/24/us/politics/andy-mckean-iowa-trump.html 
+10. President Trump amplified his attacks against the lawmakers, and they responded by charging that he was pressing the agenda of white nationalists from the White House. https://www.nytimes.com/2019/07/15/us/politics/trump-go-back-tweet-racism.html 
 
-next step market prices years deepening rally yields asking comes
-1. The 15-year-old American had captured attention worldwide with three wins at her first Grand Slam tournament. https://www.nytimes.com/2019/07/08/sports/tennis/coco-gauff-simona-halep-wimbledon.html 
-2. The flagship industry in a pivotal swing state faces an economic crisis. https://www.nytimes.com/2019/04/26/us/politics/trump-trade-war-wisconsin-dairy.html 
-3. Trophy names and a few surprises: For the first time, all three auction houses will include works by KAWS. https://www.nytimes.com/2019/05/10/arts/design/spring-art-auctions.html 
-4. The ride-hailing company was valued at $82.4 billion, well beneath the $100 billion that it had forecast to some investors. https://www.nytimes.com/2019/05/10/business/dealbook/uber-ipo.html 
-5. All eyes are on a pivotal meeting between President Trump and President Xi Jinping of China at the G-20. https://www.nytimes.com/2019/06/28/business/dealbook/g20-trade.html 
-6. The Federal Reserve left interest rates unchanged but opened the door to a future rate cut if risks to economic growth intensify. https://www.nytimes.com/2019/06/19/business/fed-interest-rates.html 
-7. The trade dispute with China has cost growers their No. 1 buyer, but they say the president is on the right course. https://www.nytimes.com/2019/05/24/business/economy/farmers-trump-trade.html 
-8. As the next debates loom, the progressive wing of the party wants sweeping change. Many others just want to jettison the president. https://www.nytimes.com/2019/07/28/us/politics/democrats-2020-trump.html 
-9. North Korea’s deepening economic trouble may propel it to return to the negotiating table — or resume weapons tests to force a deal. https://www.nytimes.com/2019/03/06/world/asia/north-korea-sanctions-missiles.html 
-10. Investors think that an interest rate cut is a certainty in July. https://www.nytimes.com/2019/06/21/business/dealbook/stock-market-fed.html 
+**gun safety noted country many feinblatt looking group back white**
+1. Both cities are grieving after mass shootings last weekend, and opinions are divided over whether his arrival will provide comfort or incite rancor. The mood in El Paso is particularly fraught. https://www.nytimes.com/2019/08/06/us/politics/trump-dayton-el-paso-shootings.html 
+2. If the president did not originally inspire the gunman, he has brought into the mainstream polarizing ideas and people once consigned to the fringes of American society. https://www.nytimes.com/2019/08/04/us/politics/trump-mass-shootings.html 
+3. The N.R.A. is dealing with inner turmoil, lawsuits and a newly empowered Democratic House. The president’s visit is being thought of as a needed pep talk. https://www.nytimes.com/2019/04/26/us/politics/trump-national-rifle-association.html 
+4. While fighting for stricter gun laws, I was always told I didn’t understand. Maybe now I do. https://www.nytimes.com/2019/06/01/opinion/sunday/shooting-laws-guns.html 
+5. Sri Lankans, angered by the government's inability to prevent the Easter Sunday terror attacks that killed more than 250 people, want a strongman back in power who can guarantee their safety and bring back economic growth. https://www.nytimes.com/reuters/2019/08/12/world/asia/12reuters-sri-lanka-gotabaya-analysis.html 
+6. Tuesday: Have crowd-control measures at Disneyland worked too well? Also, a new publishing behemoth and the streaming TV boom. https://www.nytimes.com/2019/08/06/us/disney-earnings-theme-parks.html 
+7. Protests and counterprotests have jolted a market in Indiana where activists now hand out buttons that say “Don’t Buy Veggies From Nazis.” https://www.nytimes.com/2019/08/18/us/indiana-farmers-market-white-supremacy.html 
+8. The National Rifle Association is trying to defeat a provision in the new Violence Against Women Act that could deny firearms to abusive boyfriends. But Congress is changing. https://www.nytimes.com/2019/04/01/us/politics/nra-domestic-violence-congress.html 
+9. What does it mean when a gun control advocate who lost a son to violence also becomes a gun owner who enjoys shooting? https://www.nytimes.com/2019/06/06/opinion/gun-laws.html 
+10. After Congress failed to pass legislation in the wake of the 2012 shooting, activists turned their energy toward building infrastructure for future fights. https://www.nytimes.com/2019/04/29/us/politics/newtown-parkland-guns.html 
 
-reality long central economic capital political trillions favoured labour seemingly
+**trump gun shooting bedminster pushing senator advocates republican laws tougher**
+1. That’s why, as president, I will push to ban them again. https://www.nytimes.com/2019/08/11/opinion/joe-biden-ban-assault-weapons.html 
+2. More than half a century after Lyndon Johnson fell short on his attempt at gun control, new battles bring fresh roadblocks and dispute. https://www.nytimes.com/2019/08/06/us/gun-background-checks.html 
+3. But with Republicans in charge of the Senate and President Trump in the White House, an assault weapons ban has little chance of being signed into law before 2021. https://www.nytimes.com/2019/08/12/us/politics/assault-weapons-ban.html 
+4. Some criticism of the president’s stance on gun control and his relationship to the rise of white nationalism came from conservative outlets. https://www.nytimes.com/2019/08/05/business/media/trump-shooting-media-coverage.html 
+5. It was a week of exaggeration and outright fiction for President Donald Trump as he confronted the aftermath of two mass shootings in Texas and Ohio. https://www.nytimes.com/aponline/2019/08/10/us/politics/ap-us-fact-check-week.html 
+6. Playing defense, President Donald Trump made up facts in the aftermath of two mass shootings and as U.S. businesses braced for a potentially devastating trade war with China. https://www.nytimes.com/aponline/2019/08/12/us/politics/ap-us-fact-check-week.html 
+7. It's not quite "Trump-McConnell 2020," but it might as well be. https://www.nytimes.com/aponline/2019/08/09/us/politics/ap-us-trump-mcconnell-.html 
+8. As a Democratic politician in deep-red Montana, Steve Bullock has long searched for a middle ground on guns. Now a presidential candidate in a party pushing hard for new gun-control laws, he still is. https://www.nytimes.com/aponline/2019/08/17/us/politics/ap-us-election-2020-bullock-guns.html 
+9. The president took sharp aim at opponents even as he visited two cities in mourning after horrific mass shootings in Ohio and Texas. https://www.nytimes.com/2019/08/07/us/politics/trump-el-paso-dayton-visits.html 
+10. In the wake of the mass shootings in El Paso and Dayton, Democratic presidential candidates on Saturday emphasized the urgent need to confront gun violence in America. https://www.nytimes.com/2019/08/10/us/politics/elizabeth-warren-guns-2020-democrats.html 
 
-(Missing topics due to API calls being made too frequently during the execution of the loop).
 
 More information to come...
