@@ -51,6 +51,9 @@ LDA is an example of a topic model and is widely used in natural language proces
 
 This program uses an Expectation-Maximization (EM) Algorithm as a method of implementing LDA, in contrast to other methods such as Gibbs sampling. Calculation of the posterior probability of the hidden (referring to unobserved) variable occurs in the E-step, while the optimization of model parameters occurs in the M-step. 
 
+![EM Algo](https://i.imgur.com/DdEe3gx.png)
+Here, we see the progress of each process. 35 iterations of the variational inference algorithm are applied to each of the twelve documents, and then one iteration of the EM Algorithm occurs after, given by the topmost progress bar indicating 50 total iterations.
+
 # Results
 
 ### News Suggestions Generated:
