@@ -1,11 +1,13 @@
 # News-Suggestions-Using-ML
-An implementation of LDA in Python to extract lists of topics relevant to article text input by a user. API calls utilizing extracted topics populate news suggestions.
+
+## Introduction
+This is an implementation of LDA in Python to extract lists of topics relevant to article text input by a user. API calls utilizing extracted topics populate news suggestions.
 
 Here, the algorithm identifies ten topic categories related to a gun violence article and suggests ten additional articles from the NYTimes through an API call related to each topic category.
 
 Sample article used from NYTimes: https://www.nytimes.com/2019/08/19/us/politics/trump-gun-laws.html
 
-### Topics generated:
+### Topics Generated:
 
 Topic 1: ['trump', 'mass', 'legislation', 'aggressive', 'house', 'response', 'week', 'white', 'shootings', 'back'] 
 
@@ -28,7 +30,30 @@ Topic 9: ['gun', 'safety', 'noted', 'country', 'many', 'feinblatt', 'looking', '
 Topic 10: ['trump', 'gun', 'shooting', 'bedminster', 'pushing', 'senator', 'advocates', 'republican', 'laws', 'tougher'] 
 
 
-### News Suggestions generated:
+Table of contents
+=================
+
+<!--ts-->
+   * [On Latent Dirichlet Algorithm (LDA)](#On-the-Latent-Dirichlet-Algorithm)
+   * [Results](#Results)
+   * [Concluding Remarks and Future Potential](#Concluding-Remarks)
+   
+<!--te-->
+
+
+# On the Latent Dirichlet Algorithm
+
+Topic Plate for LDA:
+
+![Topic Plate](https://i.imgur.com/ATlNX55.png)
+
+LDA is an example of a topic model and is widely used in natural language processing. It is an unsupervised machine learning algorithm. Wikipedia notes: "If observations are words collected into documents, it posits that each document is a mixture of a small number of topics and that each word's presence is attributable to one of the document's topics." Explaining observations through the use of unobserved variables is why this algorithm is "latent". An unobserved or latent variable is a variable whose value is inferred from a mathematical model, rather than being given through direct observation.
+
+This program uses an Expectation-Maximization (EM) Algorithm as a method of implementing LDA, in contrast to other methods such as Gibbs sampling. Calculation of the posterior probability of the hidden (referring to unobserved) variable occurs in the E-step, while the optimization of model parameters occurs in the M-step. 
+
+# Results
+
+### News Suggestions Generated:
 
 **trump mass legislation aggressive house response week white shootings back**
 1. After President Trump attacked four congresswomen of color on Twitter, suggesting they "go back" to the places they came from, readers shared experiences of being told the same thing.  https://www.nytimes.com/2019/07/19/reader-center/trump-go-back-stories.html 
@@ -150,5 +175,5 @@ Topic 10: ['trump', 'gun', 'shooting', 'bedminster', 'pushing', 'senator', 'advo
 9. The president took sharp aim at opponents even as he visited two cities in mourning after horrific mass shootings in Ohio and Texas. https://www.nytimes.com/2019/08/07/us/politics/trump-el-paso-dayton-visits.html 
 10. In the wake of the mass shootings in El Paso and Dayton, Democratic presidential candidates on Saturday emphasized the urgent need to confront gun violence in America. https://www.nytimes.com/2019/08/10/us/politics/elizabeth-warren-guns-2020-democrats.html 
 
-
+# Concluding Remarks
 More information to come...
